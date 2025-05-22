@@ -1,0 +1,74 @@
+/* General Map Container Styling */
+#map {
+  height: 100vh; /* Full viewport height */
+  width: 100%;   /* Full width */
+  margin: 0;
+  padding: 0;
+  border: 2px solid #ccc; /* Optional border for styling */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Customizing Leaflet Controls (Zoom, Attribution, etc.) */
+.leaflet-control {
+  background-color: #f8f9fa; /* Light background */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Hover Effect for Controls */
+.leaflet-control:hover {
+  background-color: #e9ecef;
+  color: #000;
+}
+
+/* Customizing Popups */
+.leaflet-popup-content {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.leaflet-popup-content-wrapper {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.leaflet-popup-tip {
+  background-color: #ffffff;
+}
+
+/* Customizing Markers */
+.custom-marker {
+  background-color: #007bff; /* Blue marker */
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Customizing Tooltip */
+.leaflet-tooltip {
+  background-color: #333;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 4px;
+  padding: 5px 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  #map {
+    height: 70vh; /* Adjust height for smaller screens */
+  }
+
+  .leaflet-control {
+    font-size: 12px;
+  }
+}
